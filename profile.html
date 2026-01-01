@@ -1,0 +1,144 @@
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <span class="logo">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M6 17V7l12 10V7" stroke="rgba(234,242,255,.92)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span>NEURO <span style="color:var(--cyan)">COLLAB</span></span>
+    </a>
+
+    <nav class="nav-links">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="topics.html">Topics</a>
+      <a data-nav href="services.html">Services</a>
+      <a data-nav href="about.html">About</a>
+      <a data-nav href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn" href="profile.html">My Profile</a>
+      <a class="btn primary" href="register.html">Register</a>
+    </div>
+  </div>
+</header>
+
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Neuro Collab • My Profile</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <span class="logo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6 17V7l12 10V7" stroke="rgba(234,242,255,.92)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span>NEURO <span style="color:var(--cyan)">COLLAB</span></span>
+    </a>
+    <nav class="nav-links">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="topics.html">Topics</a>
+      <a data-nav href="services.html">Services</a>
+      <a data-nav href="about.html">About</a>
+      <a data-nav href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn" href="profile.html">My Profile</a>
+      <a class="btn primary" href="register.html">Register</a>
+    </div>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="card">
+      <h1>My Profile (Demo)</h1>
+      <p class="muted">This page models your “rank / credibility / permissions” concept without implementing gamification yet.</p>
+
+      <div class="hr"></div>
+
+      <div class="grid">
+        <div class="tile">
+          <h3>Identity</h3>
+          <p class="muted"><strong>Username:</strong> demo_user</p>
+          <p class="muted"><strong>Country:</strong> Canada</p>
+          <p class="muted"><strong>Role:</strong> Contributor</p>
+        </div>
+        <div class="tile">
+          <h3>Credibility</h3>
+          <p class="muted"><strong>Level:</strong> 2</p>
+          <p class="muted"><strong>Contribution score:</strong> 47</p>
+          <p class="muted"><strong>Accepted posts:</strong> 9</p>
+          <div class="help">Higher levels unlock deeper project rooms and “locked” groups.</div>
+        </div>
+        <div class="tile">
+          <h3>Permissions</h3>
+          <div class="pillrow">
+            <span class="pill">Open discussions</span>
+            <span class="pill">Comment</span>
+            <span class="pill">Upload (limited)</span>
+            <span class="pill">Request access</span>
+          </div>
+          <div class="spacer"></div>
+          <a class="btn primary" href="topics.html">Go to topics</a>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <h2>Request access to another topic</h2>
+      <form class="form" onsubmit="event.preventDefault(); alert('Demo only: request sent to moderators.');">
+        <div class="row">
+          <div class="field" style="flex:1">
+            <label class="muted">Topic</label>
+            <select required>
+              <option value="">Select…</option>
+              <option>Engineering</option><option>Medicine</option><option>Technology</option>
+              <option>Business</option><option>Theories</option><option>Earth</option>
+            </select>
+          </div>
+          <div class="field" style="flex:2">
+            <label class="muted">Reasoning / idea you want to bring</label>
+            <input placeholder="Short, specific, outcome-focused..." required />
+          </div>
+        </div>
+        <button class="btn primary">Submit request</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>© <span id="year"></span> Neuro Collab • Demo build</div>
+    <div style="display:flex; gap:14px; flex-wrap:wrap">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="report.html">Report</a>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+
+</body>
+</html>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>© <span id="year"></span> Neuro Collab • Demo build</div>
+    <div style="display:flex; gap:14px; flex-wrap:wrap">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="report.html">Report</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>

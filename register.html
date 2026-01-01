@@ -1,0 +1,182 @@
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <span class="logo">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M6 17V7l12 10V7" stroke="rgba(234,242,255,.92)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span>NEURO <span style="color:var(--cyan)">COLLAB</span></span>
+    </a>
+
+    <nav class="nav-links">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="topics.html">Topics</a>
+      <a data-nav href="services.html">Services</a>
+      <a data-nav href="about.html">About</a>
+      <a data-nav href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn" href="profile.html">My Profile</a>
+      <a class="btn primary" href="register.html">Register</a>
+    </div>
+  </div>
+</header>
+
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Neuro Collab • Register</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <span class="logo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6 17V7l12 10V7" stroke="rgba(234,242,255,.92)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span>NEURO <span style="color:var(--cyan)">COLLAB</span></span>
+    </a>
+    <nav class="nav-links">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="topics.html">Topics</a>
+      <a data-nav href="services.html">Services</a>
+      <a data-nav href="about.html">About</a>
+      <a data-nav href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn" href="profile.html">My Profile</a>
+      <a class="btn primary" href="register.html">Register</a>
+    </div>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="card">
+      <h1>Registration</h1>
+      <p class="muted">
+        This prototype shows the flow you described: basic registration → onboarding questionnaire → moderator placement.
+      </p>
+
+      <div class="hr"></div>
+
+      <h2>Step 1 — Identity</h2>
+      <form class="form" onsubmit="event.preventDefault(); alert('Demo only: account created. Next step: questionnaire.');">
+        <div class="row">
+          <div class="field" style="flex:1">
+            <label class="muted">Full name</label>
+            <input placeholder="First Last" required />
+          </div>
+          <div class="field" style="flex:1">
+            <label class="muted">Country of residence</label>
+            <select required>
+              <option value="">Select…</option>
+              <option>Canada</option><option>United States</option><option>United Kingdom</option>
+              <option>France</option><option>Germany</option><option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field" style="flex:1">
+            <label class="muted">Email</label>
+            <input type="email" placeholder="you@domain.com" required />
+          </div>
+          <div class="field" style="flex:1">
+            <label class="muted">Password</label>
+            <input type="password" placeholder="••••••••" required />
+          </div>
+        </div>
+
+        <div class="help">
+          By registering, you agree to the <a href="terms.html" style="text-decoration:underline">Terms</a>,
+          including contribution tracking and content retention inside projects.
+        </div>
+
+        <div class="row">
+          <button class="btn primary" type="submit">Create account</button>
+          <a class="btn" href="terms.html">Read terms</a>
+        </div>
+      </form>
+
+      <div class="hr"></div>
+
+      <h2>Step 2 — Questionnaire (confidential to moderators)</h2>
+      <form class="form" onsubmit="event.preventDefault(); alert('Demo only: questionnaire submitted. Moderator placement pending.');">
+        <div class="row">
+          <div class="field" style="flex:1">
+            <label class="muted">Primary interests</label>
+            <select required>
+              <option value="">Select…</option>
+              <option>Engineering</option>
+              <option>Medicine</option>
+              <option>Technology</option>
+              <option>Business</option>
+              <option>Theories</option>
+              <option>Earth</option>
+            </select>
+          </div>
+          <div class="field" style="flex:1">
+            <label class="muted">Experience level (self-rated)</label>
+            <select required>
+              <option value="">Select…</option>
+              <option>Curious / learner</option>
+              <option>Intermediate</option>
+              <option>Advanced / professional</option>
+              <option>Expert / researcher</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="muted">Problem you want to help solve</label>
+          <textarea placeholder="Describe the problem space, what you've tried, and what you think is missing." required></textarea>
+        </div>
+
+        <div class="field">
+          <label class="muted">Optional: private synopsis of your idea (moderators only)</label>
+          <textarea placeholder="Kept confidential and used for placement into an appropriate subcategory."></textarea>
+        </div>
+
+        <div class="row">
+          <button class="btn primary" type="submit">Submit questionnaire</button>
+          <a class="btn" href="topics.html">Explore topics</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>© <span id="year"></span> Neuro Collab • Demo build</div>
+    <div style="display:flex; gap:14px; flex-wrap:wrap">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="report.html">Report</a>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+
+</body>
+</html>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>© <span id="year"></span> Neuro Collab • Demo build</div>
+    <div style="display:flex; gap:14px; flex-wrap:wrap">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="report.html">Report</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>

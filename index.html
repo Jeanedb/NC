@@ -1,0 +1,162 @@
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <span class="logo">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M6 17V7l12 10V7" stroke="rgba(234,242,255,.92)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span>NEURO <span style="color:var(--cyan)">COLLAB</span></span>
+    </a>
+
+    <nav class="nav-links">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="topics.html">Topics</a>
+      <a data-nav href="services.html">Services</a>
+      <a data-nav href="about.html">About</a>
+      <a data-nav href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn" href="profile.html">My Profile</a>
+      <a class="btn primary" href="register.html">Register</a>
+    </div>
+  </div>
+</header>
+
+
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Neuro Collab • Collective Intelligence, Structured</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">
+      <span class="logo">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M6 17V7l12 10V7" stroke="rgba(234,242,255,.92)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span>NEURO <span style="color:var(--cyan)">COLLAB</span></span>
+    </a>
+
+    <nav class="nav-links">
+      <a data-nav href="index.html">Home</a>
+      <a data-nav href="topics.html">Topics</a>
+      <a data-nav href="services.html">Services</a>
+      <a data-nav href="about.html">About</a>
+      <a data-nav href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn" href="profile.html">My Profile</a>
+      <a class="btn primary" href="register.html">Register</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="card">
+        <div class="kicker">
+          <span class="dot"></span>
+          <span class="muted">A structured platform for collaboration, research, and invention</span>
+        </div>
+        <h1>Two minds are better than one — <span style="color:var(--cyan)">when the work is organized.</span></h1>
+        <p>
+          Neuro Collab brings together people who want to solve real problems.
+          Discussions are open by default; deeper projects require earned credibility.
+        </p>
+        <div class="spacer"></div>
+        <div class="row">
+          <a class="btn primary" href="topics.html">Explore topics</a>
+          <a class="btn lime" href="pitch.html">Start a pitch</a>
+          <a class="btn" href="about.html">How it works</a>
+        </div>
+        <div class="hr"></div>
+        <div class="row">
+          <span class="badge"><span class="dot"></span> persistent records</span>
+          <span class="badge"><span class="dot" style="background:var(--yellow)"></span> ranked contributions</span>
+          <span class="badge"><span class="dot" style="background:var(--lime)"></span> resources & assets</span>
+        </div>
+      </div>
+
+      <div class="card hero-visual">
+        <div class="gridlines"></div>
+        <div class="glow"></div>
+        <!-- simple SVG brain/circuit motif -->
+        <svg class="brain" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M180 240c-40-20-60-70-40-120 25-65 110-75 160-40 30-35 80-45 120-20 70 40 85 130 40 190 25 40 15 95-25 125-45 35-115 30-155-5-30 25-80 30-120 10-55-30-75-100-40-140Z"
+            stroke="rgba(57,213,255,.55)" stroke-width="10"/>
+          <g opacity=".9" stroke="rgba(234,242,255,.55)" stroke-width="3">
+            <path d="M250 140h120M250 200h220M230 260h260M260 320h200"/>
+            <path d="M370 120v280M470 140v250M310 160v230"/>
+            <circle cx="250" cy="140" r="6"/><circle cx="370" cy="120" r="6"/><circle cx="470" cy="140" r="6"/>
+            <circle cx="250" cy="200" r="6"/><circle cx="370" cy="200" r="6"/><circle cx="470" cy="200" r="6"/>
+            <circle cx="230" cy="260" r="6"/><circle cx="370" cy="260" r="6"/><circle cx="490" cy="260" r="6"/>
+            <circle cx="260" cy="320" r="6"/><circle cx="370" cy="320" r="6"/><circle cx="460" cy="320" r="6"/>
+          </g>
+        </svg>
+        <div style="position:absolute; left:18px; bottom:18px">
+          <div class="badge">Dashboard • Topics • Discussions • Artifacts</div>
+          <div class="muted small" style="margin-top:6px">Prototype UI inspired by your original mockups.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>Recently accessed topics</h2>
+          <div class="muted small">This demo uses static sample data. In a real build, it would be personalized.</div>
+        </div>
+        <a class="btn" href="topics.html">All topics</a>
+      </div>
+
+      <div class="spacer"></div>
+      <div class="grid" data-topic-tiles></div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>© <span id="year"></span> Neuro Collab • Demo build</div>
+    <div style="display:flex; gap:14px; flex-wrap:wrap">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="report.html">Report</a>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
+
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>© <span id="year"></span> Neuro Collab • Demo build</div>
+    <div style="display:flex; gap:14px; flex-wrap:wrap">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="report.html">Report</a>
+    </div>
+  </div>
+</footer>
